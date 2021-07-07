@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="51.663205">
+<testcase classname="Search Item on Amazon and Add to Cart" name="Search Item and the Item from the list to cart" time="18.886691">
+<system-out><![CDATA[Given As a User I am on Homepage of Amazon..................................passed
+When As a User search the "Apple macbook Pro" in search filed...............passed
+And User click on the first Item from list..................................passed
+Then User Clicked on the Cart button........................................passed
+And verifies that Item is added to cart.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search Item on Amazon and Add to Cart" name="Search Item and the Item from the list to cart 2" time="32.776514">
+<failure message="java.lang.AssertionError: expected [true] but found [false]&#10;&#9;at org.testng.Assert.fail(Assert.java:94)&#10;&#9;at org.testng.Assert.failNotEquals(Assert.java:494)&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:42)&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:52)&#10;&#9;at com.pickmysolar.cucumber.steps.SearchItemAndAddItemToCartSteps.lambda$new$4(SearchItemAndAddItemToCartSteps.java:62)&#10;&#9;at ✽.And verifies that Item is added to cart(searchItemAndAddToCart.feature:9)&#10;"><![CDATA[Given As a User I am on Homepage of Amazon..................................passed
+When As a User search the "Iphone 12" in search filed.......................passed
+And User click on the first Item from list..................................passed
+Then User Clicked on the Cart button........................................passed
+And verifies that Item is added to cart.....................................failed
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.pickmysolar.cucumber.steps.SearchItemAndAddItemToCartSteps.lambda$new$4(SearchItemAndAddItemToCartSteps.java:62)
+	at ✽.And verifies that Item is added to cart(searchItemAndAddToCart.feature:9)
+]]></failure>
+</testcase>
+</testsuite>
